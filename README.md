@@ -24,23 +24,24 @@ An ancient language was recently uncovered which appears to be a close English l
 #### Details for the rules given in the requirements
 
 * A word is defined by spaces.
+* If vowel is the first character, there is no prefix.  So just add "yay" to the end.  The same result for words with no consonants.
 * Assumption - do not change the case of any characters.
-* No rule was given for vowel as the first character.  So will use same rule as no vowels found.  The example of "Apple" translated to "ppleAay"
 
 #### Point of interest
 
 * Some sites on internet use "way" instead of "yay".
   
 #### Use cases
-  
-  * sandwich      -->     andwichsay
-  * I             -->     Iyay
-  * Apple         -->     Appleyay ??
-  * 123           -->     123
-  * 123hope456    -->     ope456123hay
-  * Bitter,       -->     itter,Bay
-  * mmm           -->     mmmyay ???
-  
-  
-Did that fix the problem?
+
+| Original  | Translated | Notes | 
+| --------- | ---------- | ----- |
+| sandwich   | andwichsay    | |
+| 123hope456 | ope456123hay | |
+| I    | Iyay    | No consonants |
+| mmm | mmmyay | No vowels |
+| Apple | Appleyay | Starts with vowel |
+| 123 | 123 | If a word has no letters, don't translate it. |
+| NetFlix | etFlixNay | Don't change case of any letter. |
+| Bitter, | itter,Bay | All punctuation should be preserved. |
+
 
